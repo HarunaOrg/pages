@@ -1,2 +1,14 @@
 <h1> Here is the new page</h1>
 <img src="http://ballers.ng/assets/img/room-like.png" />
+
+
+<script>
+const Http = new XMLHttpRequest();
+const url='https://jsonplaceholder.typicode.com/posts';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
+</script>
